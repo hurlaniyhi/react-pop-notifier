@@ -1,10 +1,10 @@
 import { NotifierProvider, useNotifier } from './provider/stateManager/notifierProvider';
 import Notifier from './component/Notifier';
 
-const defaultExport = {
+const NotifierComponents = {
     NotifierProvider,
     useNotifier,
     Notifier
 };
 
-export default defaultExport;
+export default NotifierComponents;

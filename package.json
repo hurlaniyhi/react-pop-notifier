@@ -1,6 +1,6 @@
 {
   "name": "react-pop-notifier",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "A customizable react toaster library that can be used to display success and error messages in react app.",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
