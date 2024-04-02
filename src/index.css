@@ -1,0 +1,74 @@
+@keyframes slideInRight {
+  0% {
+      right: -50%;
+      width: 0;
+  }
+  100% {
+      right: 50%;
+  }
+}
+
+
+@keyframes pulsation {
+  from {
+    transform: scale(.9)
+  }
+  to {
+    transform: scale(1.3)
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-size: 62.5%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+  
+input,
+textarea,
+button,
+select,
+a,
+label,
+span,
+div,
+p{
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media (max-width: 900px) {
+  html, body {
+    font-size: 53%;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 50%;
+  }
+}
