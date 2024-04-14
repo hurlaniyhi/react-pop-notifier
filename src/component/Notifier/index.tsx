@@ -52,23 +52,15 @@ const Notifier: React.FC<INotifierProps> = ({
                                     topMargin='-5'
                                     style={{flexBasis: 'auto', flexShrink: '0', flexGrow: '0'}}
                                 >
-                                    <AppSpan textSize='25' color='#15B79E' topMargin='5'>
-                                        <AiOutlineCheckCircle 
-                                            //style={{color: '#15B79E', fontSize: '25px'}} 
-                                        /> 
-                                    </AppSpan>
+                                    <AiOutlineCheckCircle /> 
                                 </Circle>
                                 : 
                                 <Circle 
-                                    bgColor='#FEF3F2' size='48'
-                                    overflow='hidden' topMargin='-5'
+                                    bgColor='#FEF3F2' size='48' overflow='hidden' 
+                                    topMargin='-5' borderWidth='6' borderColor='#FDFDFD'
                                     style={{flexBasis: 'auto', flexShrink: '0', flexGrow: '0'}}
                                 >
-                                    <AppSpan textSize='30' color='#B42318' topMargin='5'>
-                                        <AiOutlineCloseCircle 
-                                            //style={{color: '#B42318', fontSize: '25px'}} 
-                                        /> 
-                                    </AppSpan>
+                                    <AiOutlineCloseCircle color='#B42318'  /> 
                                 </Circle>
                             }
                         </>

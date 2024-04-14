@@ -1,0 +1,6 @@
+https://prateeksurana.me/blog/react-library-with-typescript/
+
+https://prateeksurana.me/blog/react-component-library-using-storybook-7/#compiling-the-library-using-rollup
+
+npm run build
+npm publish
