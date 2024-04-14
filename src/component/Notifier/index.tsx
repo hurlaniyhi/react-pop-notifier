@@ -57,7 +57,7 @@ const Notifier: React.FC<INotifierProps> = ({
                                 : 
                                 <Circle 
                                     bgColor='#FEF3F2' size='48' overflow='hidden' 
-                                    topMargin='-5' borderWidth='6' borderColor='#FDFDFD'
+                                    topMargin='-5' borderWidth='6' borderColor='#FDFAFA'
                                     style={{flexBasis: 'auto', flexShrink: '0', flexGrow: '0'}}
                                 >
                                     <AiOutlineCloseCircle color='#B42318'  /> 
