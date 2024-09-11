@@ -1,22 +1,22 @@
 export interface StyleProps {
-    isNotifier?: boolean;
+    $isNotifier?: boolean;
     padding?: string;
     size?: string;
-    bgColor?: string,
+    $bgColor?: string,
     width?: string,
     height?: string,
-    rightMargin?: string,
-    leftMargin?: string,
+    $rightMargin?: string,
+    $leftMargin?: string,
     radius?: string,
     color?: string,
     fontWeight?: string,
-    topMargin?: string,
-    bottomMargin?: string,
-    hoverBgColor?: string,
+    $topMargin?: string,
+    $bottomMargin?: string,
+    $hoverBgColor?: string,
     margin?: string,
     sizeUnit?: string,
     zIndex?: string,
-    titleSize?: string,
+    $titleSize?: string,
     textSize?: string,
     titleColor?: string,
     titleWeight?: string,
@@ -24,11 +24,11 @@ export interface StyleProps {
     bottomPadding?: string,
     leftPadding?: string,
     rightPadding?: string, 
-    justifyContent?: string,
-    alignItems?: string,
+    $justifyContent?: string,
+    $alignItems?: string,
     align?: string,
-    borderColor?: string,
-    hoverColor?: string;
+    $borderColor?: string,
+    $hoverColor?: string;
     wrap?: string,
     top?: string,
     right?: string,
@@ -49,7 +49,7 @@ export interface StyleProps {
     maxWidth?: string,
     mxWUnit?: string,
     cursor?: string,
-    borderWidth?: string,
+    $borderWidth?: string,
     gap?: string,
     customRadius?: string,
     textWrap?: string

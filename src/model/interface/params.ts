@@ -9,7 +9,7 @@ export interface KeyValuePayload {
 }
 
 export interface INotifierProps {
-    bgColor?: string, 
+    $bgColor?: string, 
     titleColor?: string, 
     contentColor?: string, 
     closeBtnColor?: string, 

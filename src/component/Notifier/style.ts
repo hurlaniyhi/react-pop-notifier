@@ -2,10 +2,10 @@ import { StyleProps } from '../../model'
 import styled, { createGlobalStyle } from 'styled-components'
 
 export const NotifierContainer = styled.div<StyleProps>`
-    right: ${({isNotifier}) => isNotifier ? 30 : -700}px;
-    opacity: ${({isNotifier}) => isNotifier ? 1 : 0};
+    right: ${({$isNotifier}) => $isNotifier ? 30 : -700}px;
+    opacity: ${({$isNotifier}) => $isNotifier ? 1 : 0};
     transform: translateX(0%);
-    background-color: ${({bgColor}) => bgColor || '#ffffff'};
+    background-color: ${({$bgColor}) => $bgColor || '#ffffff'};
     width: 400px;
     padding: 12px;
     position: fixed;
@@ -17,8 +17,8 @@ export const NotifierContainer = styled.div<StyleProps>`
     box-sizing: border-box;
 
     @media (max-width: 463px) {
-        right: ${({isNotifier}) => isNotifier ? 50 : 120}%;
-        transform: ${({isNotifier}) => isNotifier ? 'translateX(50%)' : 'translateX(0%)'};
+        right: ${({$isNotifier}) => $isNotifier ? 50 : 120}%;
+        transform: ${({$isNotifier}) => $isNotifier ? 'translateX(50%)' : 'translateX(0%)'};
     }
 
     @media (max-width: 428px) {

@@ -1,7 +1,7 @@
-import React, { useReducer, useContext } from 'react'
+import React, { useReducer } from 'react'
 import { Action, KeyValuePayload } from '../../model'
   
-const NotifierContext = React.createContext<any>(null)
+export const NotifierContext = React.createContext<any>(null)
 
 const NotifierReducer = (state: any, action: Action<KeyValuePayload>) => {
     switch(action.type){
@@ -54,10 +54,12 @@ export const NotifierProvider = (props: any) => {
     )
 }
 
-export const useNotifier = () => {
-    const context = useContext(NotifierContext);
-    if (!context) {
-      throw new Error('useNotifier must be used within a NotiferProvider');
-    }
-    return context;
-};
+export default NotifierProvider
+
+// export const useNotifier = () => {
+//     const context = useContext(NotifierContext);
+//     if (!context) {
+//       throw new Error('useNotifier must be used within a NotiferProvider');
+//     }
+//     return context;
+// };

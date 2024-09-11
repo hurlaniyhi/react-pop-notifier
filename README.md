@@ -15,8 +15,7 @@ Or with yarn:
 ## Usage:
 
 ```tsx
-import NotifierComponents from 'react-pop-notifier';
-const { NotifierProvider } = NotifierComponents;
+import { NotifierProvider } from 'react-pop-notifier';
 
 <NotifierProvider>
     <App />
@@ -26,8 +25,7 @@ const { NotifierProvider } = NotifierComponents;
 Add the above in your root file (index.tsx)
 
 ```tsx
-import NotifierComponents from 'react-pop-notifier';
-const { useNotifier, Notifier } = NotifierComponents;
+import { useNotifier, Notifier } from 'react-pop-notifier';
 
 export const App = () => {
     const {notifier} = useNotifier()
@@ -70,7 +68,7 @@ Below is sample of how the Notifier look like for type success and error
 
 You can control the following props by providing values for them. If you don't, react-pop-notifier will manage them for you.
 
-- `bgColor`: This is the background color of the Notifier. The default is #ffffff
+- `$bgColor`: This is the background color of the Notifier. The default is #ffffff
 - `titleColor`: This is the title text color. The default is #101828
 - `contentColor`: This is content text color. The default is #667085
 - `closeBtnColor`: This is the color of the close icon. The default is #000000
