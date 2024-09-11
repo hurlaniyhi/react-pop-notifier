@@ -38,7 +38,7 @@ export interface StyleProps {
     display?: string,
     overflow?: string,
     fontFamily?: string,
-    shadow?: string,
+    $shadow?: string,
     hUnit?: string,
     minHeight?: string,
     mnHUnit?: string,

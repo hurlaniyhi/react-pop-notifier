@@ -94,7 +94,7 @@ const Notifier: React.FC<INotifierProps> = ({
                     </CustomContainer>
                     <Button 
                         $titleSize="20" fontWeight="500"
-                        width='34' shadow='none'
+                        width='34' $shadow='none'
                         height='34'
                         radius='4'
                         $bgColor={closeBtnBgColor || '#ffffff'}

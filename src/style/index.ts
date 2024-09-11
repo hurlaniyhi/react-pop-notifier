@@ -22,7 +22,7 @@ export const Button = styled.button<StyleProps>`
     padding-bottom: ${({bottomPadding}) => bottomPadding || 0}px;
     padding-left: ${({leftPadding, padding}) => leftPadding ? leftPadding : padding ? padding : 0}px;
     padding-right: ${({rightPadding, padding}) => rightPadding ? rightPadding : padding ? padding : 0}px;
-    box-shadow: ${({shadow}) => shadow || '0px 1px 2px rgba(16, 24, 40, 0.05)'};
+    box-shadow: ${({$shadow}) => $shadow || '0px 1px 2px rgba(16, 24, 40, 0.05)'};
 
     &:hover, &:focus {
         background: ${({$hoverBgColor, $bgColor}) => $hoverBgColor || $bgColor};
@@ -47,7 +47,7 @@ export const CustomContainer = styled.div<StyleProps>`
     border: ${({$borderColor}) => $borderColor ? `1px solid ${$borderColor}` : 'none'};
     overflow: ${({overflow}) => overflow || 'hidden'};
     position: relative;
-    box-shadow: ${({shadow}) => shadow || 'none'};
+    box-shadow: ${({$shadow}) => $shadow || 'none'};
     min-height: ${({minHeight, mnHUnit}) => mnHUnit && minHeight ? `${minHeight}${mnHUnit}` : minHeight ? `${minHeight}px` : 'none'};
     max-height: ${({maxHeight, mxHUnit}) => mxHUnit && maxHeight ? `${maxHeight}${mxHUnit}` : maxHeight ? `${maxHeight}px` : 'none'};
     min-width: ${({minWidth, mnWUnit}) => mnWUnit && minWidth ? `${minWidth}${mnWUnit}` : minWidth ? `${minWidth}px` : 'none'};
@@ -82,7 +82,7 @@ export const FlexRow = styled.div<StyleProps>`
     background-color: ${({$bgColor}) => $bgColor || 'transparent'};
     border-radius: ${({radius}) => radius || 0}px;
     border: 1px solid ${({$borderColor}) => $borderColor || 'transparent'};
-    box-shadow: ${({shadow}) => shadow || 'none'};
+    box-shadow: ${({$shadow}) => $shadow || 'none'};
     min-height: ${({minHeight, mnHUnit}) => mnHUnit && minHeight ? `${minHeight}${mnHUnit}` : minHeight ? `${minHeight}px` : 'none'};
     max-height: ${({maxHeight, mxHUnit}) => mxHUnit && maxHeight ? `${maxHeight}${mxHUnit}` : maxHeight ? `${maxHeight}px` : 'none'};
     min-width: ${({minWidth, mnWUnit}) => mnWUnit && minWidth ? `${minWidth}${mnWUnit}` : minWidth ? `${minWidth}px` : 'none'};
